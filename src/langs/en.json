@@ -88,6 +88,7 @@
       "settings_menu": {
         "settings_text": "Settings",
         "always_import_macro_settings": "Always import macro settings",
+        "auto_run_when_opened": "Auto-run macro when opened with a file",
         "lang_text": "Language",
         "lang_settings": {
           "title": "Language settings",

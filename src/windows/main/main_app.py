@@ -91,6 +91,9 @@ class MainApp(Window):
             self.playBtn = Button(self.center_frame, image=self.playImg, command=self.macro.start_playback)
             self.macro_recorded = True
             self.macro_saved = True
+            # Auto run the macro when the software is opened with a .pmr file
+            if self.settings.settings_dict["Loading"].get("Auto_Run_When_Opened", False):
+                self.after(100, self.macro.start_playback)
         else:
             self.playBtn = Button(self.center_frame, image=self.playImg, state=DISABLED)
         self.playBtn.pack(side=LEFT, padx=50)

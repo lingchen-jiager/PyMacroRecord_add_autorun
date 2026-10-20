@@ -88,6 +88,7 @@
       "settings_menu": {
         "settings_text": "设置",
         "always_import_macro_settings": "始终导入宏设置",
+        "auto_run_when_opened": "打开宏文件时自动运行",
         "lang_text": "语言",
         "lang_settings": {
           "title": "语言设置",

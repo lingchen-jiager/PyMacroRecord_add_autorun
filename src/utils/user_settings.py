@@ -59,7 +59,8 @@ class UserSettings:
                 "Compact_json": True
             },
             "Loading": {
-                "Always_import_macro_settings": False
+                "Always_import_macro_settings": False,
+                "Auto_Run_When_Opened": False
             },
 
             "Hotkeys": {
@@ -165,6 +166,8 @@ class UserSettings:
             userSettings["Recordings"]["Show_Events_On_Status_Bar"] = False
         if "Loading" not in userSettings:
             userSettings["Loading"] = {}
-            if "Always_import_macro_settings" not in userSettings["Loading"]:
-                userSettings["Loading"]["Always_import_macro_settings"] = False
+        if "Always_import_macro_settings" not in userSettings["Loading"]:
+            userSettings["Loading"]["Always_import_macro_settings"] = False
+        if "Auto_Run_When_Opened" not in userSettings["Loading"]:
+            userSettings["Loading"]["Auto_Run_When_Opened"] = False
         self.update_settings()

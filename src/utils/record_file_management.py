@@ -93,6 +93,9 @@ class RecordFileManagement:
                         self.main_app.settings.settings_dict["Minimization"] = macro_settings["Minimization"]
                         self.main_app.settings.settings_dict["After_Playback"] = macro_settings["After_Playback"]
         self.main_app.prevent_record = False
+        # Auto run the macro after loading it if the option is enabled
+        if macroFile is not None and self.main_app.settings.settings_dict["Loading"].get("Auto_Run_When_Opened", False):
+            self.main_app.macro.start_playback()
 
 
     def new_macro(self, event=None):
