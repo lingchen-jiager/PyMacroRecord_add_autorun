@@ -1,4 +1,5 @@
-# PyMacroRecord
+PyMacroRecord
+
 <div align="center">
   <a href="https://github.com/LOUDO56/PyMacroRecord/releases"><img src="https://github.com/LOUDO56/PyMacroRecord/assets/117168736/ff16ba4d-7979-4719-bb8f-78587cb5032f" alt="pmr logo"></a>
   <p>
@@ -10,8 +11,34 @@
 </div>
 
 
+---
+
+Changes compared with original author(相对于原作者的改动)
+
+- add a new button to control whether *.pmr autorun(加了一个按钮来控制pmr文件是否自动运行)
+
+​	 options-->settings-->auto-run-macro (选项-设置-pmr文件打开时自动运行宏)
+
+
+
+
+
+---
+
+
+
 # Overview
+
+
+
+
+
 PyMacroRecord works with a GUI made using tkinter, making it easier for users to interact with it.
+
+
+
+
+
 ![image](https://github.com/LOUDO56/PyMacroRecord/assets/117168736/2a1b2d0e-d950-40ad-84e2-971464058664)
 
 # Features
